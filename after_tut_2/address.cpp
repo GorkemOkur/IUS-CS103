@@ -1,3 +1,26 @@
+/*
+ * =====================================================================================
+ *
+ *       Filename:  address.cpp
+ *
+ *    Description:  A brief example to understand how work pointers and references.
+ *	
+ *
+ *        Version:  1.0
+ *        Created:  13/10/22 23:49:00
+ *       Revision:  none
+ *       Compiler:  g++
+ *   Compile code:  g++ -Wall address.cpp -o address (-Wall: All warnings, -o: output name(.exe) )
+ *
+ *         Author:  Ş. Görkem Okur - gorkemokur@gmail.com
+ *   Organization:  IUS
+ *
+ *   Let yourself become living poetry.
+ *   —Rumi
+ * =====================================================================================
+ */
+
+
 #include<iostream>
 
 using namespace std;
