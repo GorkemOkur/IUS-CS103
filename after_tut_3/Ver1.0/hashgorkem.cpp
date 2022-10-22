@@ -1,3 +1,25 @@
+/*
+ * =====================================================================================
+ *
+ *       Filename:  hashgorkem.cpp
+ *
+ *    Description:  A brief example of how to implement VERY PRIMITIVE HASH TABLE.
+ *	
+ *
+ *        Version:  1.0 BETA
+ *        Created:  21/10/22 02:00:00
+ *       Revision:  none
+ *       Compiler:  g++
+ *   Compile code:  g++ -Wall hashgorkem.cpp -o hashgorkem (-Wall: All warnings, -o: output name(.exe) )
+ *
+ *         Author:  Ş. Görkem Okur - gorkemokur@gmail.com
+ *   Organization:  IUS
+ *
+ *   All the evolution we know of proceeds from the vague to the definite.
+ *   — Charles Sanders Peirce
+ * =====================================================================================
+ */
+
 #include<iostream>
 
 using namespace std;

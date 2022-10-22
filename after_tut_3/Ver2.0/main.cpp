@@ -1,16 +1,16 @@
 /*
  * =====================================================================================
  *
- *       Filename:  main.cpp
+ *       Filename:  hashgorkem.cpp
  *
  *    Description:  A brief example of how to implement VERY PRIMITIVE HASH TABLE.
  *	
  *
- *        Version:  1.0 BETA
- *        Created:  21/10/22 02:00:00
+ *        Version:  2.0 BETA
+ *        Created:  21/10/22 23:00:00
  *       Revision:  none
  *       Compiler:  g++
- *   Compile code:  g++ -Wall main.cpp -o main (-Wall: All warnings, -o: output name(.exe) )
+ *   Compile code:  g++ -Wall hashgorkem.cpp -o hashgorkem (-Wall: All warnings, -o: output name(.exe) )
  *
  *         Author:  Ş. Görkem Okur - gorkemokur@gmail.com
  *   Organization:  IUS
@@ -25,67 +25,53 @@
 
 using namespace std;
 
-int getHashValue(char* arr){
-    int hashValue = 0;
-    for(int i=0; arr[i] != '\0' ;i++){
-        hashValue += (int) arr[i];
-    }
-    return hashValue;
-}
 
 int main(){
 
     hashgorkem table(10);
 
-    char* affan = new char[6];
-    affan[0]='A';
-    affan[1]='F';
-    affan[2]='F';
-    affan[3]='F';
-    affan[4]='N';
-    affan[5]='\0';
-
+    int affan = 0;
     table.addElement(affan);
 
-    char imran[] = {'I','M', 'R', 'A', 'N', '\0'};
+    int imran = 1;
     table.addElement(imran);
     //cout<< "imran: " << getHashValue(imran) << endl;
 
-    char elhan[] = {'E','L', 'H', 'A', 'N', '\0'};
+    int elhan = 2;
     table.addElement(elhan);
     //cout<< "elhan: " << getHashValue(elhan) << endl;
 
-    char ervin[] = {'E','R', 'V', 'I', 'N', '\0'};
+    int ervin = 3;
     table.addElement(ervin);
     //cout<< "ervin: " << getHashValue(ervin) << endl;
 
-    char sinanovic[] = {'S','I', 'N', 'A', 'N', 'O', 'V', 'I', 'C', '\0'};
+    int sinanovic = 4;
     table.addElement(sinanovic);
     //cout<< "sinanovic: " << getHashValue(sinanovic) << endl;
 
-    char emre[] = {'E','M', 'R', 'E', '\0'};
+    int emre = 5;
     table.addElement(emre);
     //cout<< "emre: " << getHashValue(emre) << endl;
 
-    char vedad[] = {'V','E', 'D', 'A', 'D', '\0'};
+    int vedad = 6;
     table.addElement(vedad);
     //cout<< "vedad: " << getHashValue(vedad) << endl;
 
-    char ismail[] = {'i','s', 'm', 'a', 'i', 'l', '\0'};
+    int ismail = 7;
     table.addElement(ismail);// index 9 for size 10
     //cout<< "ismail: " << getHashValue(ismail) << endl;
 
-    char fatima[] = {'F','A', 'T', 'I', 'M', 'A', '\0'};// index 4 for size 10
+    int fatima = 8;// index 4 for size 10
     table.addElement(fatima);
     //cout<< "fatima: " << getHashValue(fatima) << endl;
 
-    char tryingH[] = {'t','r', 'y', 'i', 'n', 'g',  'H', '\0'};// index 1 for size 10
+    int tryingH = 9;// index 1 for size 10
     table.addElement(tryingH);
     //cout<< "tryingH: " << getHashValue(tryingH) << endl;
     
     table.display();
 
-
+    cout<<"\n\n\n";
 
     table.removeElement(tryingH);
 
